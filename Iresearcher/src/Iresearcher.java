@@ -395,6 +395,7 @@ public class Iresearcher
             int check = 0;
             for(int i = 0; i < users.length; i++)
             {
+                if(users[i][0] == null) break;
                 if(users[i][0].equals(friend)) check = i;
             }
             if(!checkDeletedAccount(deletedAccounts, check))
